@@ -69,6 +69,19 @@ nav ul a {
 
 /*---------------- MAIN -------------------*/
 
+img{
+    max-width: 100%;
+    text-align: center;
+    
+    /*
+        Text align block to center images
+    */
+    
+    /*
+        this makes sures that the img does not spill outide of its div
+    */
+}
+
 .floater-section {
     float: left;
     min-height: 300px;
@@ -143,4 +156,6 @@ nav ul a {
     font-size: 40px;
     font-family: sans-serif;
     font-weight: 900;
+    margin: 0px;
+    padding: 0px;
 }
