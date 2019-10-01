@@ -29,12 +29,14 @@ nav ul {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+    
 }
 
 nav li {
     border-bottom: 1px solid #212529;
     padding: 10px 0px;
     margin: 10px;
+    text-decoration: underline overline wavy red;
 }
 
 nav li:first-child {
