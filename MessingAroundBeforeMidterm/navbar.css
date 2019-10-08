@@ -3,7 +3,12 @@ body {
 }
 
 header {
-    background-color: lightcyan;
+   
+    background-image: url("http://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_1200/v1527100413/photos/275648_original.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
 }
 
 header input#toggler {
@@ -11,16 +16,15 @@ header input#toggler {
 }
 
 header label img {
-    width: 50px;
-    height: 40px;/*this used to be set to auto*/
+    width: 40px;
+    height: auto;
     margin: 10px;
 }
 
 nav {
     padding: 20px 10px;
     display: none;
-    
-    
+
 }
 
 input#toggler:checked + nav{
@@ -31,14 +35,12 @@ nav ul {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-    
 }
 
 nav li {
     border-bottom: 1px solid #212529;
     padding: 10px 0px;
     margin: 10px;
-    text-decoration: underline overline wavy red ;
 }
 
 nav li:first-child {
@@ -47,7 +49,8 @@ nav li:first-child {
 
 nav ul a {
     text-decoration: none;
-    color: #212529;
+    color: dodgerblue;
+    background: black;
     text-transform: uppercase;
     line-height: 40px; /*for vertical centering */
 }
@@ -71,21 +74,5 @@ nav ul a {
     nav {
         display: block;
         padding: 0px 10px;
-        
     }
 }
-
-h1 {
-    font-family: 'Rye', cursive;
-    
-}
-li{
-    font-family: 'Rye', cursive;
-    font-size: 30px;
-}
-p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    line-height: 1;
-}
-

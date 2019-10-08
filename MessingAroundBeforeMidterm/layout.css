@@ -12,6 +12,8 @@
     clear: both;
     content: "";
     display: block;
+   
+   
 }
 
 img {
@@ -21,6 +23,7 @@ img {
 .content {
     padding: 15px;
 }
+
 
 /* MEDIUM SIZE SCREENS */
 @media(min-width: 540px){
@@ -59,9 +62,9 @@ img {
 }
 
 /* LARGE SCREENS */
-@media (min-width: 800px){
+@media (min-width: 1000px){
     .container {
-        width: 760px;
+        width: 900px;
         margin: auto;
     }
 
@@ -92,5 +95,4 @@ img {
     .width-lg-100 {
         width: 100%;
     }
-    
 }
