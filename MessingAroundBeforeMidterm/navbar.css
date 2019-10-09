@@ -16,6 +16,8 @@ url("https://www.therealgreek.com/wp-content/uploads/2019/03/003_48.1_TRG_WESTFI
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+   /* background-attachment: fixed;
+    z-index: 900;*/
     
 }
 
