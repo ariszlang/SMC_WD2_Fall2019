@@ -61,6 +61,30 @@
 }
 h1{
     font-family: 'Trochut', cursive;
-    font-size: 40px;
+    
     text-align: center;
+    font-size: 60px;
 }
+h2{
+    font-family: 'Trochut', cursive;
+        text-align: center;
+
+}
+.introtext{
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 40px;
+    line-height: 1.9em;
+    
+
+}
+h3{
+font-family: 'Trochut', cursive;
+
+
+}
+
+
+
+
