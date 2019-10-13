@@ -97,9 +97,9 @@ img {
     }
     
     .introtext{
-    font-family:'Merriweather', serif;
+    
     font-size: 20px;
-    column-count: 2;
+   
     column-gap: 40px;
     line-height: 1.9em;
     

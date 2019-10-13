@@ -63,12 +63,20 @@ nav li:first-child {
 }
 
 nav ul a {
-    text-decoration: underline ;
+    text-decoration: none ;
     color: dodgerblue;
     
     text-transform: uppercase;
     line-height: 40px; /*for vertical centering */
     font-size: 40px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.highlight{
+    text-decoration: underline;
 }
 
 @media(min-width: 540px){
