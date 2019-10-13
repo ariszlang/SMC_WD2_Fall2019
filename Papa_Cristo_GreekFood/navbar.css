@@ -63,11 +63,12 @@ nav li:first-child {
 }
 
 nav ul a {
-    text-decoration: none;
+    text-decoration: underline ;
     color: dodgerblue;
-    background: black;
+    
     text-transform: uppercase;
     line-height: 40px; /*for vertical centering */
+    font-size: 40px;
 }
 
 @media(min-width: 540px){

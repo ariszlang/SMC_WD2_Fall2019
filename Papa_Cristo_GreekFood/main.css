@@ -60,19 +60,20 @@
     transform: translate(-50%, -50%);
 }
 h1{
-    font-family: 'Trochut', cursive;
+    font-family: 'Noto Serif', serif;
     
     text-align: center;
     font-size: 40px;
 }
 h2{
-    font-family: 'Trochut', cursive;
+    font-family: 'Noto Serif', serif;
     text-align: center;
     font-size:30px;
 
 }
 .introtext{
-    font-family:'Merriweather', serif;
+        font-family: 'Noto Serif', serif;
+
     font-size: 20px;
     /*column-count: 2;
     column-gap: 40px;
@@ -81,15 +82,21 @@ h2{
 
 }
 h3{
-font-family: 'Trochut', cursive;
+font-family: 'Noto Serif', serif;
+
 
 }
 
 p{
-    font-family:'Merriweather', serif;
+    font-family: 'Noto Serif', serif;
+
     line-height: 23px;
 }
+li{
+        font-family: 'Noto Serif', serif;
 
+    
+}
 .firstPapacristo{
     display: block;
     margin-left: auto;
@@ -129,3 +136,9 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+body{
+    font-family: 'Noto Serif', serif;
+
+}
+
