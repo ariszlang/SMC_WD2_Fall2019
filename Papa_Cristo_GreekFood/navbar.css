@@ -73,11 +73,12 @@ nav ul a {
 }
 
 nav a:hover{
-    text-decoration: underline;
+    text-shadow: 2px 1px black;
 }
 
 .highlight{
     text-decoration: underline;
+    text-shadow: 1px 1px #c1c1c1;
 }
 
 @media(min-width: 540px){
