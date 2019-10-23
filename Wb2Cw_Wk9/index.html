@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial scale=1.0">
+      <meta http-equiv="X-UA- Compatible" content="ie=edge">
+    <title>title</title>
+  </head>
+  <body>
+      <header>
+            <nav id="navBar">
+          
+                <button id="colorButton">Color Me!</button>
+                
+          </nav>
+      
+      </header>
+          <main>
+      
+            <div id="contentMain">
+              <h1>Hello, World</h1>
+            </div>
+          </main>
+      <footer>
+      </footer>
+        
+      <script>
+          document.getElementById("colorButton").addEventListener("click", function(){
+              
+              var mainContent = document.getElementById("cotentMain");
+              var redComponent = Math.random()*255;
+              var greenComponent = Math.random()*255;
+              var blueComponent = Math.random()*255;
+              
+              var compRGBString ="rgb(" + redComponent + "," + greenComponent + "," blueComponent +")";
+              
+              document.getElementById("contentMain").style.backgroundColor = "rgb(0, "+(Math.random()*255)+", 255)";
+              
+              mainContent.style.backgroundColor = compositeRGBString;
+          });
+          
+                        document.getElementById("contentMain").style.backgroundColor = "rgb(0, "+(Math.random()*255)+", 255)";
+
+          
+    document.getElementById("contentMain").style.backgroundColor = "rgb(255, 0, 0)"; 
+          
+          mainContent.style. //this where I have to play around with things so after the period on style just look for different things//
+        
+        /*alert("This is our very JavaScript written");*/
+           /*       prompt("Hey what's Your Name"); */
+
+      </script>
+  </body>
+</html>
