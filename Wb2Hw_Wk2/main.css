@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: lightcyan;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+nav ul li ul{
+    display: block;
+    position:absolute;
+    background-color: #fff;
+}
+
+nav ul li ul li a{
+  padding: 8px 14px;
+}
+nav ul li ul li a:hover{
+  padding: 8px 14px;
+}
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        padding: 0px 10px;
+    }
+}
+
+body{
+    background:#f3f5f9;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #4b4276;
+    padding: 30px 0px;
+}
+
+.wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(225,225,225,0.05);
+}
+
+.wrapper .sidebar ul li a{
+    color: #bdb8d7;
+    display: block;
+    
+}
+
+
+.wrapper .sidebar ul li :hover{
+    background: #594f8d;
+    
+}
+
+.imgUnderline{
+    text-decoration: none;
+    padding-bottom: 5px;
+    background-image: url(https://www.pidl.org/site-assets/images/line.png/@@images/image.png)
+}
