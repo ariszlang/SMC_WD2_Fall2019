@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+}
+
+header {
+   
+  /*
+    
+background-image:     /*
+url("https://www.therealgreek.com/wp-content/uploads/2019/03/003_48.1_TRG_WESTFIELD_PC_155_web.jpg");*/
+    
+    
+   /* 
+    url("http://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_1200/v1527100413/photos/275648_original.jpg");
+    
+   /* 
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   /* background-attachment: fixed;
+    z-index: 900;*/
+    
+    
+    
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    padding: 20px 10px;
+    display: none;
+
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    /*border-bottom: 1px solid #212529;*/
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none ;
+    color: dodgerblue;
+    
+    text-transform: uppercase;
+    line-height: 40px; /*for vertical centering */
+    font-size: 40px;
+    text-shadow: 2px 1px #c1c1c1;
+}
+
+nav a:hover{
+    text-shadow: 2px 1px black;
+}
+
+.highlight{
+    text-decoration: underline;
+    text-shadow: 1px 1px #c1c1c1;
+}
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    header label {
+        display: none;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        padding: 0px 10px;
+    }
+}

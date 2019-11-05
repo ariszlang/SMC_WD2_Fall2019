@@ -1,0 +1,46 @@
+body{
+background-image: url(http://images.coveralia.com/audio/z/Zoe-Musica_De_Fondo_Mtv_Unplugged-Interior2.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center
+;
+    
+}
+
+
+.firstPrtSong{
+    background-color: cornsilk;
+    font-family: 'Jomolhari', serif;
+
+}
+.firstPrtDiv{
+    height:400px;
+    width: 400px;
+    margin: auto;
+    
+}
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    color:white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;   
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: grey;
+  color: white;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Switch an image and some shii </title>
+  </head>
+  <body>
+      
+      <main>
+          <section>
+              <img src="http://www.lonestardigital.com/EOS_D30/Sample_Pix/D30_Img_3771(400x400_Crop).jpg" id="imageToSwitch" alt= "LUNA">
+          </section>
+          
+          <button id="imgToggle">Switch!</button>
+          
+          <section>
+          
+              <form action="" method="GET">
+              <select id="make">
+                  <option value="audi"></option>
+                  <option value="bmw"></option>
+                  <option value="fiat"></option>
+                  
+                  
+                  
+              </select>
+                  
+                  <select id=""></select>
+              
+              </form>
+          
+          </section>
+      
+      </main>
+      
+      <script>
+          
+         var image2URL = "https://www.noao.edu/image_gallery/images/d5/dumba.jpg";
+         var image2Alt = "Via Lactea";
+         var switchingImage = document.getElementById("imageToSwitch");
+              
+         var image1URL = switchingImage.src;
+         var image1Alt = switchingImage.alt;
+          
+          
+          document.getElementById('imgToggle').addEventListener('click', function(){
+              
+             
+              
+              console.log(image1URL);
+              
+              if( switchingImage.src == image2URL )/* are we on image 2 already*/{
+                  switchingImage.src = image1URL;
+                  switchingImage.alt = image1Alt;
+                 }
+              
+              else{
+                  
+                  switchingImage.src = image2URL;
+                  switchingImage.alt = image2Alt;
+                 
+                 }
+             
+              
+            
+              
+              
+              
+          });
+          
+          
+          var makeSelect = document.getElementById('make');
+          var modelSelect = document.getElementById('model')
+          
+          
+          makeSelect.addEventListener('change', function(){
+              console.log(makeSelect.value);
+              
+              if(makeSelect.value ==='audi')
+              modelSelect.innerHTML = '<option value="M3">M3</option>\
+                                       <option value="M5">M5</option>\
+                                       <option value="X5">X5</option>';
+              
+          });
+      
+      </script>
+  
+  </body>
+</html>
