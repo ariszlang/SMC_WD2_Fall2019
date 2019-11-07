@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+    <title>Document</title>
+      
+      <style>
+      
+          .main-field{
+              width: 400px;
+              height: 700px;
+              background-color: mediumorchid;
+          }
+          
+      </style>
+  </head>
+  <body>
+      
+      <div class="main-field">
+      
+          <p> this is an intro to jquery</p>
+      
+      </div>
+      
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script>
+          $(document).ready(function({
+              
+              $('.button-append').click(function(){
+                            $('.main-field').append("<p>Hello Jquery</p>");
+
+              
+          }
+              
+              
+          }));
+      </script>
+  </body>
+</html>
