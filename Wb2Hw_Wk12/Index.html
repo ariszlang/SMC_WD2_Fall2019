@@ -1,175 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html>
+  <head>
+    <title>JQSlider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JQSlider</h1>
     
-    <link rel="stylesheet" href="main.css">
-
-    
-    <title>Week 12 HW: Interactive image gallery
-    </title>
-
-    <style>
-        .container {
-            background-color: black;
-            width: 540px;
-            height: 400px;
-        }
-        .box {
-            background-color: darkorange;
-            width: 150px;
-            height: 150px;
-            display: none;
-        }
-    </style>
-
-</head>
-<body>
-
     <header>
-        
-         <label for="toggler">
+        <label for="toggler">
             <img src="https://www.premier-sourcecu.com/frameworks/premier2017/images/menu_toggle.png">
         </label>
         <input type="checkbox" id="toggler">
-        
+
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </nav>
-
-        <form action="" method="POST">
-            <label for="userName">User Name</label>
-            <input type="text" id="userName" name="username" placeholder="Karen Schmidt">
-            <br/>
-            <label for="userEmail">Email Address</label>
-            <input type="email" id="userEmail" name="useremail" placeholder="karen@gmail.com">
-            <br>
-
-            <select id="FX">
-                <option value="" default></option>
-                <option value="show">Show</option>
-                <option value="hide">Hide</option>
-                <option value="fadein">FadeIn</option>
-                <option value="fadeout">FadeOut</option>
-                <option value="slidedown">SlideDown</option>
-                <option value="slideup">SlideUp</option>
-            </select>
-            <input type="submit" value="Send!">
-        </form>
     </header>
-    <form action="" method="POST">
-            <label for="userName">User Name</label>
-            <input type="text" id="userName" name="username" placeholder="Karen Schmidt">
-            <br/>
-            <label for="userEmail">Email Address</label>
-            <input type="email" id="userEmail" name="useremail" placeholder="karen@gmail.com">
-            <br>
 
-            <select id="FX">
-                <option value="" default></option>
-                <option value="show">Show</option>
-                <option value="hide">Hide</option>
-                <option value="fadein">FadeIn</option>
-                <option value="fadeout">FadeOut</option>
-                <option value="slidedown">SlideDown</option>
-                <option value="slideup">SlideUp</option>
-            </select>
-            <input type="submit" value="Send!">
-        </form>
     <main>
-        <section class="notification-area"></section>
         
-        <section class="container">
-            <div class="box"></div>
-        </section>
-        
-    
         <div class="container">
-            <div class="floater-section width-md-33 green">
+            <div class="floater-section width-md-100 ">
                 <div class="content">
-                    <img src="https://i.redd.it/rguiv7xysbg21.jpg" alt="Let's play!">
-                    <h3>Let's play</h3>
-                    <p>What fun!</p>
+                     <div class="slider-outer">
+                        <img src="images/arrow-left.png" class="prev" alt="Prev">
+                        <div class="slider-inner">
+                          <img src="images/zoe1.jpg" class="active">
+                          <img src="images/zoe2.jpg">
+                          <img src="images/zoe3.jpg">
+                          <img src="images/zoe4.jpg">
+                          <img src="images/zoe5.jpg">
+                          <img src="images/zoe6.jpg">
+                          <img src="images/zoe7.jpg">
+                        </div>
+                        <img src="images/arrow-right.png" class="next" alt="Next">
+                      </div>                    
+                   <!-- <h3>Let's play</h3>
+                    <p>What fun!</p> -->
                 </div>
-            </div>
-            <div class="floater-section width-md-33 red">
-                <div class="content">
-                    <img src="https://cdn.newsapi.com.au/image/v1/c4763839b968e520f2ec2ee6e3f9fa50?width=650"
-                        alt="Happy girl">
-                    <h3>Happy Girl</h3>
-                    <div class="content-table">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio mi, gravida eget consequat eget, dictum sit amet elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="floater-section width-md-33 yellow">
-                <div class="content">
-                    <picture>
-                        <source media="(min-width: 800px)"
-                            srcset="https://upload.wikimedia.org/wikipedia/commons/1/1b/Persian_Cat_%28kitten%29.jpg">
-                        <source media="(min-width: 540px)"
-                            srcset="https://upload.wikimedia.org/wikipedia/commons/c/c0/Fm_shiba_inu_puppy.jpg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Quokka.jpg/450px-Quokka.jpg"
-                            alt="Quokka" style="width:auto;">
-                    </picture>
-                </div>
-
-            </div>
-            
-             <div class="container">
-            <div class="floater-section width-md-33 green">
-                <div class="content">
-                    <img src="https://i.redd.it/rguiv7xysbg21.jpg" alt="Let's play!">
-                    <h3>Let's play</h3>
-                    <p>What fun!</p>
-                </div>
-            </div>
-            <div class="floater-section width-md-33 red">
-                <div class="content">
-                    <img src="https://cdn.newsapi.com.au/image/v1/c4763839b968e520f2ec2ee6e3f9fa50?width=650"
-                        alt="Happy girl">
-                    <h3>Happy Girl</h3>
-                    <div class="content-table">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio mi, gravida eget consequat eget, dictum sit amet elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="floater-section width-md-33 yellow">
-                <div class="content">
-                    <picture>
-                        <source media="(min-width: 800px)"
-                            srcset="https://upload.wikimedia.org/wikipedia/commons/1/1b/Persian_Cat_%28kitten%29.jpg">
-                        <source media="(min-width: 540px)"
-                            srcset="https://upload.wikimedia.org/wikipedia/commons/c/c0/Fm_shiba_inu_puppy.jpg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Quokka.jpg/450px-Quokka.jpg"
-                            alt="Quokka" style="width:auto;">
-                    </picture>
-                </div>
-
-            </div>
-            
-            <div class="floater-section width-md-50 blue pos-relative">
-                <div class="v-centered-block green"></div>
-            </div>
-            <div class="floater-section width-md-50 purple pos-relative">
-                <div class="v-h-centered-block red"></div>
             </div>
         </div>
-   
-        </div> <!-- this is where the code was red when I deleted this closing div-->
         
-    </main>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="jqueryUI.js"></script>
-    <script src="script.js"></script>
-</body>
+        </main>
+        
+   <!--   <div class="slider-outer">
+        <img src="images/arrow-left.png" class="prev" alt="Prev">
+        <div class="slider-inner">
+          <img src="images/zoe1.jpg" class="active">
+          <img src="images/zoe2.jpg">
+          <img src="images/zoe3.jpg">
+          <img src="images/zoe4.jpg">
+          <img src="images/zoe5.jpg">
+          <img src="images/zoe6.jpg">
+          <img src="images/zoe7.jpg">
+        </div>
+        <img src="images/arrow-right.png" class="next" alt="Next">
+     
+      </div>
+        -->
+    </div>
+  </body>
 </html>
