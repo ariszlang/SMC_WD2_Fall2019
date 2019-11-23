@@ -60,10 +60,14 @@
     transform: translate(-50%, -50%);
 }
 h1{
-    font-family: 'Noto Serif', serif;
-    
+    font-family: 'Caesar Dressing', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 578px;
+    color:
+    #930e0e;
+    text-shadow:
+    black -3px 12px;
+    margin-top: 0px;
 }
 h2{
     font-family: 'Noto Serif', serif;
