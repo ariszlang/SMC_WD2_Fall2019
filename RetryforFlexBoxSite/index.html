@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Experiments</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <label for="toggler">
+            <img src="Beer_Full.png" id="beerFull" alt="beer icon is full">
+        </label>
+        <input type="checkbox" id="toggler">
+        <nav class="nav-area">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Arts and Crafts</a></li>
+                <li class="drop-down"><a href="#">Services</a>
+                    <ul>
+                      <li><a href="#">Web</a></li>
+                      <li><a href="#">SEO</a></li>
+                      <li><a href="#">Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">English Class</a></li>
+                <li><a hred="#">Food Drive</a></li>
+                <li><a hred="#">Yoga</a></li>
+
+              </ul>
+          </nav>
+    </header>
+    
+    <main>
+           <div class="beginContainer">
+            <div>
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+               
+           </div>
+           <div class="container-1">
+              <div background class="box-1">
+                <h3>Box One</h3>
+                  
+                <div class="container">
+                    <img src="http://www.armadalekennel.com/wp-content/uploads/2017/09/cat-img-176x300.jpg" alt="Avatar" class="image">
+                    <div class="middle">
+                        <div class="text">s dui arcu nec neque. In placerat risus ut tellus sollicitudin finibus sed ac sem. Etiam euismod tellus varius dictum cursus. Vivamus accumsan metus in arcu aliquet, in porttitor augue auctor. Duis molestie odio in elit dapibus, id so</div>
+                      </div>
+                </div>
+                <p> Hollywood West neighborhood center is a community center based in Hollywood California. The oal of Hollywood west is to provide access to healthy activities for low income residents.</p>
+                <p>esque, dolor felis bibendum est, et venenatis dui arcu nec neque. In placerat risus ut tellus sollicitudin finibus sed ac sem. Etiam euismod tellus varius dictum cursus. Vivamus accumsan metus in arcu aliquet, in porttitor augue auctor. Duis molestie odio in elit dapibus, id sollicitudin massa dignissim. Maecenas nibh quam, volutpat sit amet ante a, mattis malesuada massa. </p>
+              </div>
+              <div class="box-2">
+                <h3>Box Two</h3>
+                <div class="container">
+                    <img src="http://www.armadalekennel.com/wp-content/uploads/2017/09/cat-img-176x300.jpg" alt="Avatar" class="image">
+                    <div class="middle">
+                        <div class="text">s dui arcu nec neque. In placerat risus ut tellus sollicitudin finibus sed ac sem. Etiam euismod tellus varius dictum cursus. Vivamus accumsan metus in arcu aliquet, in porttitor augue auctor. Duis molestie odio in elit dapibus, id so</div>
+                      </div>
+                </div>
+              </div>
+              <div class="box-3">
+                <h3>Box Three</h3>
+                <div class="container">
+                    <img src="http://www.armadalekennel.com/wp-content/uploads/2017/09/cat-img-176x300.jpg" alt="Avatar" class="image">
+                    <div class="middle">
+                        <div class="text">s dui arcu nec neque. In placerat risus ut tellus sollicitudin finibus sed ac sem. Etiam euismod tellus varius dictum cursus. Vivamus accumsan metus in arcu aliquet, in porttitor augue auctor. Duis molestie odio in elit dapibus, id so</div>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="box-4">
+                <h3>Box Four</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+              </div>
+              <div class="box-5">
+                <h3>Box Five</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+              </div>
+            </div>
+
+            
+    </main>
+    <footer>
+    <div>
+        <p>
+            
+            hello world
+        
+        
+        </p>
+        
+        
+        </div>
+    
+    </footer>
+    <script>
+        
+       
+        
+         // we'll set up the variables before we describe the function - 
+        // this way running the function will not change them
+        /* by running variables first, the contents of image 2 and image 1 are independent */
+        var image3URL = "Beer_Empty.png";
+        var image3Alt =  "Beer icon is empty."
+        /* replace anything that repeats */
+        var switchingImage = document.getElementById("beerFull");
+
+        /* grab original variable & store in image1URL src */  
+        var image1URL = switchingImage.src;
+        /* grab original variable & store in image1URL alt */ 
+        var image1Alt = switchingImage.alt;
+
+        /* for the Nav */
+        // listen for a click on an '#imgToggle' button and run the following function
+        document.getElementById('beerFull').addEventListener('click', function(){
+
+            //So I had to change the .src to .alt so it can switch back and forth
+            //also I changed the imageURL to a image3Alt
+            if( switchingImage.alt == image3Alt ){
+                switchingImage.src = image1URL; //make the source be the 1st URL
+                switchingImage.alt = image1Alt; //make the alt attribute be the 1st alt attribute
+
+            }
+            else { //otherwise - here we'd expect the source of the image is the same as the contents of the image1URL variable
+                switchingImage.src = image3URL; //make the source be the 2nd URL
+                switchingImage.alt = image3Alt; //make the alt attribute be the 2nd alt attribute
+
+
+        /*  for the id="imageToSwitch" if it was not repeating */
+        /*  document.getElementById("imageToSwitch").src= image2URL;
+            document.getElementById("imageToSwitch").alt= image2Alt;
+        */    
+
+    
+        }
+
+
+        })
+    
+    
+    
+    </script>
+    
+    
+</body>
+    
+</html>

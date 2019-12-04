@@ -1,27 +1,13 @@
+@import "navbar.css";
 
-.flex-container{
-    
-    background-color: darkorange;
-    
-    display: flex;
-    /*
-    EXPERIMENTS WITH CONTIANER:
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    height: 400px;
-    align-content: space-evenly; */
-    */
-    justify-content: space-evenly;
-    height: 400px;
-    align-items: self-start;    
+
+body {
+    margin: 0px;
 }
+
 
 .flex-item{
     margin: 10px;
-    
-
 }
 
 .flex-item:nth-child(1){
@@ -45,5 +31,5 @@
 }
 .flex-item:nth-child(6){
     background-color:mintcream;
-
 }
+
