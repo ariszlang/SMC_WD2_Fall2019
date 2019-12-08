@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Experiments</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <label for="toggler">
+            <img src="Beer_Full.png" id="beerFull" alt="beer icon is full">
+        </label>
+        <input type="checkbox" id="toggler">
+        <nav class="nav-area">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li id="donate"><a href="donate.html">Donate</a></li>
+              </ul>
+          </nav>
+    </header>  
+    <main>
+        <div class="beginContainer">
+                
+            <img src="https://www.moveforhunger.org/wp-content/uploads/fooddrivehomepage_slider1.jpg">                 
+        </div>
+        <div class="container-1">
+              <div class="box-1">
+                <h3>Box One</h3>
+                  <img src="https://www.sheknows.com/wp-content/uploads/2018/08/girl-participating-in-food-drive_hc8pdo.jpeg" alt="Avatar" >
+                </div>
+              
+            <div class="box-2">
+                <h3>Box Two</h3>
+                    <img src="http://www.armadalekennel.com/wp-content/uploads/2017/09/cat-img-176x300.jpg" alt="Avatar">
+              </div>
+            
+              <div class="box-3">
+                <h3>Box Three</h3>
+                    <img src="https://www.hungertaskforce.org/wp-content/uploads/2018/09/filled_box.jpg" alt="Avatar">
+              </div> 
+        </div>
+
+        <div class="container-2">
+            <div class="box-4">
+                <h3>Box Four</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                <span id="dots">...</span>
+                <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+              <div class="box-5">
+                <h3>Box Five</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 		imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                <span id="dots1">...</span>
+                <span id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, 	 ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue 	 ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 	In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae 	 dui eget tellus gravida venenatis. Integer fringilla congue eros non 			fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                </p>
+                <button onclick="myFunction1()" id="myBtn1">Read more</button>
+              </div>
+        </div>      
+    </main>
+    <footer>
+        <div>
+        <p>hello world</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+<!--<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } 
+  
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunction1() {
+  var dots1 = document.getElementById("dots1");
+  var more1Text = document.getElementById("more1");
+  var btn1Text = document.getElementById("myBtn1");
+  
+   if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btn1Text.innerHTML = "Read more"; 
+    more1Text.style.display = "none";
+  } 
+  
+  else {
+    dots1.style.display = "none";
+    btn1Text.innerHTML = "Read less"; 
+    more1Text.style.display = "inline";
+  }
+}
+    
+</script> -->
+    
+    
+</body>
+    
+</html>
