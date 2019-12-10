@@ -7,6 +7,7 @@ img{
 
 h3{
     text-align: center;
+    font-size: 40px;
 }
 
 #more{
@@ -16,19 +17,32 @@ h3{
 #more1{
     display: none;
 }
-
+main{
+    background-color: #fbfffe;
+}
 .beginContainer{
         /*background-image: url(https://ak3.picdn.net/shutterstock/videos/11746163/thumb/11.jpg);/*url(https://www.clarkcountynv.gov/parks/PublishingImages/locations/hollywood/center-hollywood.jpg);MAYBE SWITCH THIS IMAGE TO SOMETHING ELSE MORE COMMUNITY-Y*/
        /* background-repeat: no-repeat;
         padding-bottom: 290px;
         width: 100%; 
-        background-size: cover;*/
-        
+        background-size: cover;*/  
     }
 
 
 @media(min-width:540px){
     
+    .welcomeSign{
+        font-size: 60px;
+        position: absolute;
+        top: 294px;
+        left: 273px;
+        color:
+        cornsilk;
+        background-color:
+        rgba(50, 50, 50, 0.4);
+        box-shadow: 0px 0px 11px
+        rgba(50, 50, 50, 0.7);
+    }
     
     .container-1{
       display:flex;

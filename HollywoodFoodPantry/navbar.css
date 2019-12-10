@@ -9,10 +9,12 @@ p{
     font-size: 30px;
     padding: 37px;
     margin: 0px;
+    color: #231f20;
+    background: #ced9b8;
 }
 
 header {
-    background-color: floralwhite;
+    background-color: #c4d979;
    /* background-image: url(https://cdn.shopify.com/s/files/1/1193/4776/products/129307_a_1024x1024.jpg?v=1513009893);
     background-repeat: no-repeat;
     background-size:cover;*/
@@ -23,7 +25,7 @@ header input#toggler {
 }
 
 header label img {
-    width: 40px;
+    width: 70px;
     height: auto;
     margin: 10px;
 }
@@ -37,45 +39,6 @@ input#toggler:checked + nav{
     display: block;
 }
 
-
-nav ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-}
-
-nav li {
-    /*border-bottom: 1px solid #212529;*/
-    padding: 10px 0px;
-    margin: 10px;
-    text-align: center;
-}
-
-nav li:first-child {
-    margin-top: 0px;
-}
-
-nav ul a {
-    text-decoration: none ;
-    color: dodgerblue;
-    text-transform: uppercase;
-    line-height: 40px; /*for vertical centering */
-    font-size: 40px;
-    text-shadow: 2px 1px #c1c1c1;
-}
-
-nav a:hover{
-    text-shadow: 2px 1px black;
-}
-
-.highlight{
-    text-decoration: underline;
-    text-shadow: 1px 1px #c1c1c1;
-}
-
-
-
-/* THIS IS THE PREVIOUS STYLING FOR NAV BAR 
 nav ul {
     list-style: none;
     padding-left: 0px;
@@ -88,7 +51,7 @@ nav li {
     padding: 10px 0px;
     margin: 10px;
     font-size: 36px;
-}/*
+}
 
 nav li:first-child {
     margin-top: 0px;
@@ -99,22 +62,26 @@ nav ul a {
     color: #212529;
     text-transform: uppercase;
     line-height: 40px; /*for vertical centering */
-    
-/*}
-*/
+}
 
+nav a:hover{
+    text-shadow: 2px 1px black;
+}
 
+.highlight{
+    text-decoration: underline;
+    text-shadow: 1px 1px #c1c1c1;
+}
 
-
-/*#donate{
-    background-color:#e10540;
+#donate{
+    background-color:#c16200/*MAYBE THIS COLOR #e37300*/;
     border: black 1px;
     border-color:#112819;
     border-radius: 20px;
     padding: 14px;
     box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);
     text-shadow: black 1px 1px;
-}*/
+}
 
 @media(min-width: 540px){
     nav ul li {

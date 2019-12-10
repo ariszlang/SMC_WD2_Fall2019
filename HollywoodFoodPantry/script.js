@@ -1,10 +1,10 @@
 // we'll set up the variables before we describe the function - 
         // this way running the function will not change them
         /* by running variables first, the contents of image 2 and image 1 are independent */
-        var image3URL = "Beer_Empty.png";
-        var image3Alt =  "Beer icon is empty."
+        var image3URL = "Exit.png";
+        var image3Alt =  "exit"
         /* replace anything that repeats */
-        var switchingImage = document.getElementById("beerFull");
+        var switchingImage = document.getElementById("fruitFull");
 
         /* grab original variable & store in image1URL src */  
         var image1URL = switchingImage.src;
@@ -13,7 +13,7 @@
 
         /* for the Nav */
         // listen for a click on an '#imgToggle' button and run the following function
-        document.getElementById('beerFull').addEventListener('click', function(){
+        document.getElementById('fruitFull').addEventListener('click', function(){
 
             //So I had to change the .src to .alt so it can switch back and forth
             //also I changed the imageURL to a image3Alt

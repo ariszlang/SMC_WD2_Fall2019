@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flexbox Experiments</title>
+    <title>HFP-Donate</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 </head>
@@ -16,34 +16,20 @@
         <input type="checkbox" id="toggler">
         <nav class="nav-area">
               <ul>
-                <li><a href="index.html"><span>Hollywood </span><span>Food Pantry</span></a></li>
+                <li><a href="index.html"><span>Hollywood</span><span>Food Pantry</span></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li id="donate"><a href="donate.html">Donate</a></li>
+                <li id="donate"><a class="highlight" href="donate.html">Donate</a></li>
               </ul>
           </nav>
     </header>  
     <main>
-        <div class="beginContainer">
-                
-            <img src="https://www.moveforhunger.org/wp-content/uploads/fooddrivehomepage_slider1.jpg">                 
-        </div>
         <div class="container-1">
               <div class="box-1">
                 <h3>Box One</h3>
-                  <img src="https://www.sheknows.com/wp-content/uploads/2018/08/girl-participating-in-food-drive_hc8pdo.jpeg" alt="Avatar" >
-                </div>
-              
-            <div class="box-2">
-                <h3>Box Two</h3>
-                    <img src="http://www.armadalekennel.com/wp-content/uploads/2017/09/cat-img-176x300.jpg" alt="Avatar">
-              </div>
-            
-              <div class="box-3">
-                <h3>Box Three</h3>
-                    <img src="https://www.hungertaskforce.org/wp-content/uploads/2018/09/filled_box.jpg" alt="Avatar">
-              </div> 
+                  <img src="https://upload.brickinc.net/chainfiles/75/creative/201603/635926203019359853-header_cobornscares1.jpg" alt="Avatar" >
+                </div> 
         </div>
 
         <div class="container-2">
@@ -56,17 +42,87 @@
                           Last name:<br>
                           <input type="text" name="lastname" value="Mouse">
                           <br><br>
-                          <input type="submit" value="Submit">
                     </form> 
-                  
-                  <form action="/action_page.php" target="_blank">
-                      
-                      <input type="number"  min=".01" >
-                      <input type="submit">
-                  </form>
+                      <form action="thankYouPg.html" target="thankYouPg.html">
 
-                  
+                          <input type="number"  min="1" >
+                          <input type="submit">
+                      </form>
               </div>
+            <div class="box-4">
+                    <h3>Box Four</h3>
+                <h2>Responsive Checkout Form</h2>
+<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+   <form action="thankYouPg.html" target="thankYouPg.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+       <input type="number"  min="1" >
+                          <input type="submit">
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+    </div>
+               
+                
+                </div>
+            </div>
               
         </div>      
     </main>
