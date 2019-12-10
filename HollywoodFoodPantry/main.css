@@ -56,7 +56,10 @@ P{
         width: 100%; 
         background-size: cover;*/  
     }
-
+ .copyright{
+     font-size: 15px;
+}
+     
 
 @media(min-width:540px){
     
@@ -111,11 +114,24 @@ P{
     font-size: 69px;  
    }
     
+    .copyright{
+        font-size: 15px;
+        
+    }
+    
+    .girlparticipatinggiving{
+        padding-bottom: 199px;
+    }   
     /*.beginContainer{
       /* background-image: url(https://www.moveforhunger.org/wp-content/uploads/fooddrivehomepage_slider1.jpg);/*url(https://www.clarkcountynv.gov/parks/PublishingImages/locations/hollywood/center-hollywood.jpg);*/
        /* background-repeat: no-repeat;
         width: 100%; 
         background-size: cover;*/
+    
+    form{
+        padding: 40px;
+    }
+    
     }
   }
   
@@ -194,7 +210,7 @@ textarea{
 }
 
 form{
-    padding:40px
+    padding:100px
 }
 
 input[type=text], select, textarea {
