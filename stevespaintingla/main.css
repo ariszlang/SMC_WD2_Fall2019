@@ -1,0 +1,183 @@
+@import "colors.css";
+@import url(layout.css);
+@import url(navbar.css);
+
+
+/* multi-line vertical alignment */
+.content-table {
+    display: table;
+    height: 120px;
+}
+
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* block element with known height */
+.pos-relative {
+    position: relative;
+}
+
+/* .v-centered-block {
+    height: 100px;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+} */
+
+/* with unknown height */
+.v-centered-block {
+    height: 160px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+/* block element verticaly and horizontaly centered - known height/width */
+/* .v-h-centered-block {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
+} */
+
+/* for unknown height/width */
+.v-h-centered-block {
+    height: 140px;
+    width: 140px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-family: 'Noto Serif', serif;
+    
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    font-size:30px;
+
+}
+.introtext{
+        font-family: 'Noto Serif', serif;
+
+    font-size: 20px;
+    /*column-count: 2;
+    column-gap: 40px;
+    line-height: 1.9em;
+    */
+
+}
+h3{
+font-family: 'Noto Serif', serif;
+
+
+}
+
+p{
+    font-family: 'Noto Serif', serif;
+
+    line-height: 30px;
+}
+li{
+        font-family: 'Noto Serif', serif;
+
+    
+}
+.firstPapacristo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+body {font-family:'Noto Serif', serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: dodgerblue;
+  padding: 12px 20px;
+  
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    border: 1px grey solid;
+    color: dodgerblue;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+
+}
+
+textarea{
+    height: 200px;
+    font-family: 'Noto Serif', serif;
+}
+
+label{
+    font-family: 'Noto Serif', serif
+}
+input{
+    font-family: 'Noto Serif', serif
+}
+.hours{
+    text-align: center;
+    font-size: 25px
+}
+.phonenumbercenter{
+    text-align: center;
+        font-size: 25px;
+}
+
+.number{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+.adrs{
+    font-size: 25px;
+    text-align: center;
+}
